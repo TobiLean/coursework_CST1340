@@ -1,0 +1,106 @@
+@font-face {
+    font-family: bebas_nue;
+    src: url("C:\\codeine\\html(CST1340)\\coursework_CST1340\\BebasNeue-Regular.woff");
+}
+
+@font-face {
+    font-family: bebas_nue;
+    src: url("C:\\codeine\\html(CST1340)\\coursework_CST1340\\BebasNeue-Regular.woff");
+}
+
+body {
+    background-color: palegreen;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 0px;
+    overflow: hidden;
+    border-bottom: 5px solid;
+    border-color: palegreen;
+    height: 50px;
+    z-index: 100;
+}
+
+li {
+    float: left;
+}
+
+ul#navigation {
+    list-style-type: none;
+}
+
+li a {
+    color: white;
+    display: block;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-decoration: none;
+    font-family: 'britannic', 'bebas_nue', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+li a:hover {
+    color: palegreen;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+
+.scrollable {
+    background-color: palegreen;
+    overflow-y: hidden;
+    overflow-x: auto;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    top: 50px;
+    white-space: nowrap;
+    border-bottom: black;  
+}
+
+.scrollable::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    background-color: black;
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    margin: 1px;
+    animation: scroll 40s ease-in-out infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(0px)
+    }
+
+    25% {
+        transform: translate(-100vw)
+    }
+
+    50% {
+        transform: translate(-200vw)
+    }
+
+    75% {
+        transform: translate(-300vw)
+    }
+
+    100% {
+        transform: translate(0vw);
+    }
+}

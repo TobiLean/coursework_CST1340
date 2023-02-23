@@ -1,0 +1,54 @@
+<Library>
+  <Books>
+    <Book>
+      <S.No>1</S.No>
+      <Name>To Kill a Mockingbird</Name>
+      <Price>$10.99</Price>
+    </Book>
+    <Book>
+      <S.No>2</S.No>
+      <Name>Pride and Prejudice</Name>
+      <Price>$8.99</Price>
+    </Book>
+    <Book>
+      <S.No>3</S.No>
+      <Name>The Great Gatsby</Name>
+      <Price>$12.99</Price>
+    </Book>
+    <Book>
+      <S.No>4</S.No>
+      <Name>1984</Name>
+      <Price>$9.99</Price>
+    </Book>
+    <Book>
+      <S.No>5</S.No>
+      <Name>Animal Farm</Name>
+      <Price>$7.99</Price>
+    </Book>
+    <Book>
+      <S.No>6</S.No>
+      <Name>The Catcher in the Rye</Name>
+      <Price>$11.99</Price>
+    </Book>
+    <Book>
+      <S.No>7</S.No>
+      <Name>One Hundred Years of Solitude</Name>
+      <Price>$14.99</Price>
+    </Book>
+    <Book>
+      <S.No>8</S.No>
+      <Name>Moby-Bick</Name>
+      <Price>$9.49</Price>
+    </Book>
+    <Book>
+      <S.No>9</S.No>
+      <Name>Wuthering Heights</Name>
+      <Price>$12.49</Price>
+    </Book>
+    <Book>
+      <S.No>10</S.No>
+      <Name>The Odyssey</Name>
+      <Price>$11.99</Price>
+    </Book>
+  </Books>
+</Library>

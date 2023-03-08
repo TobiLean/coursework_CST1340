@@ -2,33 +2,59 @@
 <html lang="en">
     <head>
         <title>Bookstore</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css">        
     </head>
     <body>
         <div class="navbar">
-            <ul id="navigation">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#quick">Quick</a></li>
-                <li><a href="#home">Store</a></li>
-            </ul>
+            <h2><a class="header" href="#home">*pinebooks</a></h2>
+            <div class="navigation">
+                <ul id="navigation">
+                    <div>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about_us">ABOUT US</a></li>
+                        <li><a href="#store">STORE</a></li>
+                    </div>
+                </ul>
+            </div>
         </div>
 
         <section id="home">
-            <div class="scrollable">
-                <div class="card">
-
+            <!-- <div id="carousel">
+                <p><b>Best-Sellers</b></p>
+                <div class="scrollable">
+                    <img id="card-1" src="assets/pexels-quang-nguyen-vinh-14025666.jpg" alt="image 1" onload="changeCard(0)">
+                    <img id="card-2" src="assets/pexels-kindel-media-7978875.jpg" alt="Image 2" onload="changeCard(1)">
+                    <img id="card-3" src="assets/pexels-andrea-piacquadio-3782754.jpg" alt="Image 3" onload="changeCard(2)">
                 </div>
-                <div class="card">
-
+                <div class="nav-button">
+                    <span class="dot active" onclick="changeCard(0)"></span>
+                    <span class="dot" onclick="changeCard(1)"></span>
+                    <span class="dot" onclick="changeCard(2)"></span>
                 </div>
-                <div class="card">
-
+            </div> -->
+            <img id="bgImg" src="assets/picture-frame-leaning-against-white-wall-small.jpg" alt="background">
+            <div class="blur" id="bgMask"></div>
+            <div class="poster">
+                <p>
+                    Making books <br>accessible <br>for everyone.
+                </p>
+            </div>
+            <section id="best_sellers">
+                <div class="container">
+                    <h1>Best Sellers</h1>
+                    <div class="books">
+                        <div class="book-big" id="book-1"></div>
+                        <div class="book-big" id="book-2"></div>
+                        <div class="book-big" id="book-3"></div>
+                    </div>
                 </div>
-                <div class="card">
+            </section>
+        </section>
+        <section id="about_us">
+            <div class="test">
 
-                </div>
             </div>
         </section>
-
+        <script src="carousel.js"></script>
     </body>
 </html>

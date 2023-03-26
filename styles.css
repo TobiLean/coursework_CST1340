@@ -15,6 +15,7 @@
 
 body {
     display: unset;
+    height: 100%;
     background-color: white;
     overflow-x: hidden;
     font-size: 16px;
@@ -82,7 +83,7 @@ section {
 
 #home {
     width: 100%;
-    height: 150%;
+    height: 200%;
     top: 0px;
     left: 0px;
 }
@@ -90,7 +91,7 @@ section {
 #best_sellers {
     width: 100%;
     height: 300px;
-    bottom: -110px;
+    bottom: 20%;
 }
 
 .container {
@@ -188,19 +189,251 @@ section {
     font-size: 5rem;
 }
 
+#about_us {
+    background-color: gray;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 200%;
+}
+
+#AB1{
+    height: 862.5px;
+    background-color: #2F3435;
+    
+}
+
+#banner {
+    width: 1200px;
+    height: 400px;
+   
+ }
+
+ #textbg {
+    width:600px;
+    height: 400px;
+    float: left;
+    transform: translate(15%, 80%);
+    
+}
+
+#textbg img{
+    width:600px;
+    height: 400px;
+    top: 50%; 
+    box-shadow: 5px 5px 20px grey;
+    
+    
+}
+
+#text{
+    text-align: justify;
+    top: 2px;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    padding: 50px;
+    color: #D1D0CE;
+}
+
+#openingHours {
+    width:600px;
+    height: 200px;
+    float: right;
+    transform: translate(30%, -80%);
+    box-shadow: 5px 5px 20px grey;
+    border: 4px solid #0E6655;
+    text-align: center;
+    align-items: center;
+    padding: 50px 0;
+    color:#DEE8E6;
+  
+}
+
+#AB2{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 862.5px;
+    background-color: #E5E4E2;
+   
+}
+
+#video {
+    width:600px;
+    height: 400px;
+    float: left;
+    transform: translate(50%);
+    
+}
+
+#donationInfo {
+    transform: translate(1%);
+}
+
+#donationInfo a{
+    color:#2F3435;
+    font-family: Lucida;
+    padding: 10px 20px;
+    margin-right: 16px;
+    text-decoration: none;
+    border: 2px solid #2F3435;
+    border-radius: 25px;
+    justify-content: center;
+    font-size: 40px;
+    cursor: pointer;
+    
+
+}
+
+#AB3{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 550px;
+    background-color: #2F3435;
+
+}
+
+#contain { 
+    width: 100%;
+    height: auto;  
+    text-align: center;
+}
+
+#box {
+    width: 220px;
+    height: 500px;
+    display: inline-block;
+    background-color: #FFFFFF;
+    align-items: center;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 0 1%;
+    box-shadow: 5px 5px 20px grey;
+    
+}
+
+#box img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #0E6655 ;
+}
+
+#box h2 {
+    font-family: Perpetua;
+
+}
+
+#row2 {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-family: Helvetica;  
+
+}
+
+#col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+#col:nth-child(2), #col:nth-child(3) {
+    flex-basis: 15%;
+    padding: 10px;
+}
+
+#col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+#col ul li{
+    list-style: none;
+    margin-bottom: 12px;
+    transform: translate(-30px, 2px);
+}
+
+#col ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#smIcons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000000;
+    background: #FFFFFF;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #cccccc;
+    margin: 20px auto;
+}
+
+#copyRight{
+    text-align: center;
+    font-family: Helvetica;
+}
+
+#underline {
+    width: 100%;
+    height: 5px;
+    background: #67928A;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+#underline span{
+    width: 15px;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: sliding 2s linear infinite;
+}
+@keyframes sliding {
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+footer {
+    position: absolute;
+    background: linear-gradient(to right,#242726, #4A4D4C  );
+    color: white;
+    bottom: -547.5%;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    padding: 20px 0 10px;
+    border-top-right-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
 /* .justify {
     position: absolute;
     left: 25px;
-}
-
-#about_us {
-    position: absolute;
-    top: 100vh;
-    left: 0;
-    display: inline;
-    height: 100vh;
-    width: 100vw;
-    background-color: var(--pineGreen);
 }
 
 .scrollable {

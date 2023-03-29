@@ -5,18 +5,68 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <div class="navbar">
+            <h2><a class="header" href="index.html">*pinebooks</a></h2>
+            <div class="navigation">
+                <ul id="navigation">
+                    <div>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#store">STORE</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
         <section id="hero">
         <div id="basket">
             <div id="info">
-                <h1 style="font-size:100px;" >PINE BOOKS DONATIONS</h1>
+                <h1 style="font-size:100px; letter-spacing: 3px;" >PINE BOOKS DONATIONS</h1>
                 <p style="font-size: 18px; font-family: Helvetica;" > 
                     Pine books is the world's largest charitable bookstore that aims
                      towards making books more accessable to people (specifically young children). We accept 2 types of donations: Books or Money. A little goes a long way!
                 </p>
                 <div id="row">
-                    <a href="#">Donate a Book</a>
-                    <a href="#">Donate Money</a>
+                    <a href="#div1">Donate a Book</a>
+                    <a href="#div2">Donate Money</a>
                  </div>
+            </div>
+        </div>
+        <div class="overlay" id="div1">
+            <div class="wrapper">
+                <h2>donate a book</h2>
+                <a href="#" class="close">&times;</a>
+                <div class="content">
+                    <div class="form_container">
+                        <form>
+                            <label>First Name</label>
+                            <input type="text" placeholder="Your First name" id="">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Your Last name" id="">
+                            <label>Book Name</label>
+                            <textarea placeholder="type something"></textarea>
+                            <input type="submit" value="Donate">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay" id="div2">
+            <div class="wrapper">
+                <h2>donate money</h2>
+                <a href="#" class="close">&times;</a>
+                <div class="content">
+                    <div class="form_container">
+                        <form>
+                            <label>First Name</label>
+                            <input type="text" placeholder="Your First name" id="">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Your Last name" id="">
+                            <label>ammount</label>
+                            <textarea placeholder="type something"></textarea>
+                            <input type="submit" value="Donate">
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
         </section>

@@ -16,7 +16,7 @@
 body {
     display: unset;
     height: 100%;
-    background-color: white;
+    background-color: #E5E4E2;
     overflow-x: hidden;
     font-size: 16px;
     font-family: 'Coolvetica', 'britannic', 'bebas_nue', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -88,13 +88,13 @@ section {
     left: 0px;
 }
 
-#best_sellers {
+#book_section {
     width: 100%;
-    height: 300px;
+    height: 1000px;
     bottom: 20%;
 }
 
-.container {
+#best_sellers {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -104,17 +104,46 @@ section {
     z-index: 100;
 }
 
-.container h1 {
+#best_sellers h1 {
     position: absolute;
-    margin-top: 0px;
+    margin-top: 50px;
     font-size: 50px;
-    color: var(--pineGreen);
+    /* color: var(--pineGreen); */
+    color: #333;
     margin-bottom: 0;
 }
 
-.books {
+#top_picks {
+    display: flex;
+    justify-content: center;
     position: absolute;
-    top: 140px;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    z-index: 100;
+}
+
+#top_picks h1 {
+    position: absolute;
+    margin-top: 450px;
+    font-size: 50px;
+    /* color: var(--pineGreen); */
+    color: #333;
+    margin-bottom: 0;
+}
+
+#best_sellers-books {
+    position: absolute;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+#top_picks-books {
+    position: absolute;
+    top: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,12 +152,18 @@ section {
 
 .book-big {
     float: left;
-    width: 200px;
+    width: 150px;
     height: 200px;
-    margin: 20px;
+    margin: 30px;
     border-radius: 20px;
     background-color: white;
     box-shadow: 1px 3px 10px 1px black;
+    overflow: hidden;
+}
+
+.book_img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* #book-1 {
@@ -174,6 +209,15 @@ section {
     top: -80px;
 }
 
+#bgImg-2 {
+    position: absolute;
+    height: auto;
+    max-width: 100%;
+    z-index: 0;
+    background-size: contain;
+    /* top: -80px; */
+}
+
 .poster {
     position: absolute;
     top: 160px;
@@ -194,7 +238,7 @@ section {
     height: auto;
     width: 100%;
     position: absolute;
-    top: 200%;
+    top: 250%;
 }
 
 #AB1{
@@ -206,7 +250,6 @@ section {
 #banner {
     width: 1200px;
     height: 400px;
-   
  }
 
  #textbg {
@@ -237,11 +280,12 @@ section {
 }
 
 #openingHours {
+    background-color: #000000;
     width:600px;
     height: 200px;
     float: right;
     transform: translate(30%, -80%);
-    box-shadow: 5px 5px 20px grey;
+    /* box-shadow: 5px 5px 20px grey; */
     border: 4px solid #0E6655;
     text-align: center;
     align-items: center;
@@ -299,7 +343,7 @@ section {
     text-align: center;
 }
 
-#box {
+.box {
     width: 220px;
     height: 500px;
     display: inline-block;
@@ -312,14 +356,35 @@ section {
     
 }
 
-#box img{
+.profile_img{
+    position: relative;
+    top: 0;
+    left: 0;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 4px solid #0E6655 ;
 }
 
-#box h2 {
+.hover_img{
+    display: none;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #0E6655 ;
+}
+
+.img_icon:hover .hover_img{
+    display: inline;
+    border-color: red;
+}
+
+.img_icon:hover .profile_img{
+    display: none;
+    border-color: red;
+}
+
+.box h2 {
     font-family: Perpetua;
 
 }
@@ -421,7 +486,7 @@ footer {
     position: absolute;
     background: linear-gradient(to right,#242726, #4A4D4C  );
     color: white;
-    bottom: -547.5%;
+    bottom: -597.5%;
     width: 100%;
     height: auto;
     z-index: 100;
@@ -435,42 +500,107 @@ footer {
 /*Donation page*/
 
 #basket {
-    width: 90%;
-    height: 100%;
-    max-width: 1000px;
-    margin: 0 50px;
+width: 90%;
+height: 100%;
+max-width: 1000px;
+margin: 0 50px;
+display: flex;
+align-items: center;
+}
+
+#hero {
+background-image: url("bg1.png");
+width: 100%;
+height: 100vh;
+color: #FFFFFF;
+}
+
+#info #row {
     display: flex;
     align-items: center;
-  }
-  
-  #hero {
-  background-image: url("bg1.png");
-  width: 100%;
-  height: 100vh;
-  color: #FFFFFF;
-  }
-  
-  #info #row {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      margin-top: 30px;
-  }
-  
-  #info a{
-      color:#FFFFFF;
-      font-size: 20px;
-      padding: 10px 15px;
-      margin-right: 16px;
-      text-decoration: none;
-      border: 2px solid #FFFFFF;
-      border-radius: 25px;
-  
-  }
-  
-  
-  
-   
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#info a{
+    color:#FFFFFF;
+    font-size: 20px;
+    padding: 10px 15px;
+    margin-right: 16px;
+    text-decoration: none;
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    transition: all 0.3ms ease-in-out
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.wrapper{
+    margin: 100px auto;
+    padding: 70px;
+    background: #e7e7e7;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.wrapper h2{
+    margin-top: 0;
+    color: var(--pineGreen);
+}
+
+.wrapper .close{
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--pineGreen);
+}
+
+.wrapper .content{
+    max-height: 30%;
+    overflow: auto;
+}
+
+.form_container{
+    border-radius: 5px;
+    background-color: #e7e7e7;
+    padding: 20px 0;
+}
+
+form label{
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #333;
+}
+
+input[type=text], textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
 
 /* .justify {
     position: absolute;

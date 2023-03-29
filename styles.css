@@ -431,6 +431,47 @@ footer {
     line-height: 20px;
 }
 
+
+/*Donation page*/
+
+#basket {
+    width: 90%;
+    height: 100%;
+    max-width: 1000px;
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #hero {
+  background-image: url("bg1.png");
+  width: 100%;
+  height: 100vh;
+  color: #FFFFFF;
+  }
+  
+  #info #row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+  }
+  
+  #info a{
+      color:#FFFFFF;
+      font-size: 20px;
+      padding: 10px 15px;
+      margin-right: 16px;
+      text-decoration: none;
+      border: 2px solid #FFFFFF;
+      border-radius: 25px;
+  
+  }
+  
+  
+  
+   
+
 /* .justify {
     position: absolute;
     left: 25px;

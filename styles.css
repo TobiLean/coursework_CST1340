@@ -166,6 +166,21 @@ section {
     max-height: 100%;
 }
 
+.details {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+
+.details p{
+    margin-left: -10px;
+}
+
+.paragraphMarker {
+    font-size: 10px;
+    color: #333333b2;
+}
+
 /* #book-1 {
     background-color: red;
 
@@ -209,13 +224,16 @@ section {
     top: -80px;
 }
 
+#imgDiv-2 {
+    overflow: hidden;
+    height: 700px;
+    width: 100vw;
+}
+
 #bgImg-2 {
-    position: absolute;
-    height: auto;
-    max-width: 100%;
-    z-index: 0;
-    background-size: contain;
-    /* top: -80px; */
+    width: 100%;
+    max-height: auto;
+    object-fit: fill;
 }
 
 .poster {
@@ -242,34 +260,31 @@ section {
 }
 
 #AB1{
-    height: 862.5px;
     background-color: #2F3435;
     
 }
 
 #banner {
-    width: 1200px;
+    width: 100vw;
     height: 400px;
+    background-color: red;
  }
 
- #textbg {
+ /* #textbg {
     width:600px;
     height: 400px;
     float: left;
-    transform: translate(15%, 80%);
-    
-}
+} */
 
-#textbg img{
+/* #textbg img{
     width:600px;
     height: 400px;
     top: 50%; 
     box-shadow: 5px 5px 20px grey;
-    
-    
-}
 
-#text{
+} */
+
+#text {
     text-align: justify;
     top: 2px;
     position: absolute;
@@ -279,48 +294,68 @@ section {
     color: #D1D0CE;
 }
 
-#openingHours {
+/* #openingHours {
     background-color: #000000;
     width:600px;
-    height: 200px;
+    height: 250px;
     float: right;
-    transform: translate(30%, -80%);
-    /* box-shadow: 5px 5px 20px grey; */
+    box-shadow: 5px 5px 20px grey;
     border: 4px solid #0E6655;
     text-align: center;
     align-items: center;
     padding: 50px 0;
     color:#DEE8E6;
   
-}
+} 
+*/
 
 #AB2{
-    padding-top: 100px;
-    padding-bottom: 100px;
-    height: 862.5px;
     background-color: #E5E4E2;
-   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#heading { 
+    align-items: center;
+    justify-content: center;
+}
+
+#bottom {
+    display: flex;
+    height: 600px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#donateBtn {
+    position: absolute;
+    width: 300px;
+    margin-right: 10px;
+    left: 100px;
+}
+
+#video video {
+    width:550px;
+    height: 500px;
+    margin-top: -100px;
 }
 
 #video {
-    width:600px;
-    height: 400px;
-    float: left;
-    transform: translate(50%);
-    
+    position: absolute;
+    margin-left: 500px;
 }
 
-#donationInfo {
-    transform: translate(1%);
-}
 
-#donationInfo a{
-    color:#2F3435;
+#donateBtn a{
+    color: var(--pineGreen);
     font-family: Lucida;
     padding: 10px 20px;
     margin-right: 16px;
     text-decoration: none;
-    border: 2px solid #2F3435;
+    border: 2px solid var(--pineGreen);
     border-radius: 25px;
     justify-content: center;
     font-size: 40px;
@@ -334,16 +369,30 @@ section {
     padding-bottom: 100px;
     height: 550px;
     background-color: #2F3435;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
 
+#AB3 h1 {
+    position: absolute;
+    top: 0;
 }
 
 #contain { 
     width: 100%;
     height: auto;  
     text-align: center;
+    display: flex;
+    position: absolute;
+    top: 150px;
+    /* justify-content: center; */
+    justify-content: space-evenly;
 }
 
 .box {
+    /* position: absolute;
+    top: 0; */
     width: 220px;
     height: 500px;
     display: inline-block;
@@ -351,8 +400,9 @@ section {
     align-items: center;
     border-radius: 25px;
     padding: 10px;
-    margin: 0 1%;
-    box-shadow: 5px 5px 20px grey;
+    /* margin-left: 20px; */
+    /* margin: 0 1%; */
+    box-shadow: 7px 5px 10px 2px black;
     
 }
 
@@ -376,17 +426,14 @@ section {
 
 .img_icon:hover .hover_img{
     display: inline;
-    border-color: red;
 }
 
 .img_icon:hover .profile_img{
     display: none;
-    border-color: red;
 }
 
 .box h2 {
     font-family: Perpetua;
-
 }
 
 #row2 {
@@ -396,8 +443,7 @@ section {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-    font-family: Helvetica;  
-
+    font-family: Montserrat;  
 }
 
 #col {
@@ -484,14 +530,13 @@ hr {
 
 footer {
     position: absolute;
-    background: linear-gradient(to right,#242726, #4A4D4C  );
+    background: linear-gradient(to right,#242726, #4A4D4C);
     color: white;
-    bottom: -597.5%;
+    bottom: -530.5%;
     width: 100%;
     height: auto;
     z-index: 100;
     padding: 20px 0 10px;
-    border-top-right-radius: 125px;
     font-size: 13px;
     line-height: 20px;
 }

@@ -1,11 +1,16 @@
 @font-face {
     font-family: bebas_nue;
-    src: url("C:\\codeine\\html(CST1340)\\coursework_CST1340\\BebasNeue-Regular.woff");
+    src: url("fonts/BebasNeue-Regular.woff");
 }
 
 @font-face {
     font-family: searocks;
-    src: url("C:\\codeine\\html(CST1340)\\coursework_CST1340\\Searocks TTF.ttf");
+    src: url("fonts/Searocks TTF.ttf");
+}
+
+@font-face {
+    font-family: Coolvetica;
+    src: url("fonts/coolvetica rg.otf");
 }
 
 :root {
@@ -19,7 +24,7 @@ body {
     background-color: #E5E4E2;
     overflow-x: hidden;
     font-size: 16px;
-    font-family: 'Coolvetica', 'britannic', 'bebas_nue', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Coolvetica, 'britannic', 'bebas_nue', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .navbar {
@@ -181,6 +186,10 @@ section {
     color: #333333b2;
 }
 
+#heading h1 {
+    color: #484747;
+}
+
 /* #book-1 {
     background-color: red;
 
@@ -215,10 +224,16 @@ section {
     color: var(--pineGreen);
 } */
 
+#imgDiv-1 {
+    overflow: hidden;
+    height: 700px;
+    width: 100vw;
+}
+
 #bgImg {
     position: absolute;
-    height: auto;
-    max-width: 100%;
+    max-height: auto;
+    width: 100%;
     z-index: 0;
     background-size: contain;
     top: -80px;
@@ -270,19 +285,6 @@ section {
     background-color: red;
  }
 
- /* #textbg {
-    width:600px;
-    height: 400px;
-    float: left;
-} */
-
-/* #textbg img{
-    width:600px;
-    height: 400px;
-    top: 50%; 
-    box-shadow: 5px 5px 20px grey;
-
-} */
 
 #text {
     text-align: justify;
@@ -293,21 +295,6 @@ section {
     padding: 50px;
     color: #D1D0CE;
 }
-
-/* #openingHours {
-    background-color: #000000;
-    width:600px;
-    height: 250px;
-    float: right;
-    box-shadow: 5px 5px 20px grey;
-    border: 4px solid #0E6655;
-    text-align: center;
-    align-items: center;
-    padding: 50px 0;
-    color:#DEE8E6;
-  
-} 
-*/
 
 #AB2{
     background-color: #E5E4E2;
@@ -332,7 +319,7 @@ section {
 
 #donateBtn {
     position: absolute;
-    width: 300px;
+    width: 500px;
     margin-right: 10px;
     left: 100px;
 }
@@ -351,17 +338,16 @@ section {
 
 #donateBtn a{
     color: var(--pineGreen);
-    font-family: Lucida;
+    font-family: Coolvetica;
+    font-weight: bold;
     padding: 10px 20px;
     margin-right: 16px;
     text-decoration: none;
     border: 2px solid var(--pineGreen);
     border-radius: 25px;
     justify-content: center;
-    font-size: 40px;
+    font-size: 50px;
     cursor: pointer;
-    
-
 }
 
 #AB3{

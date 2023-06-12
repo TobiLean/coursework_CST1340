@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE Books [
+    <!ELEMENT Books (Book+)>
+    <!ELEMENT Book (S.No, Name, Price, Artist, Country, Company)>
+    <!ELEMENT S.No (#PCDATA)>
+    <!ELEMENT Name (#PCDATA)>
+    <!ELEMENT Price (#PCDATA)>
+    <!ELEMENT Artist (#PCDATA)>
+    <!ELEMENT Country (#PCDATA)>
+    <!ELEMENT Company (#PCDATA)>
+]>

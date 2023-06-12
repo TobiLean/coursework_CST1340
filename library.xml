@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="library.xsl"?>
+<!DOCTYPE Books SYSTEM "library.dtd">
+<Books>
+  <Book>
+    <S.No>1</S.No>
+    <Name>To Kill a Mockingbird</Name>
+    <Price>$10.99</Price>
+    <Artist>Harper Lee</Artist>
+    <Country>USA</Country>
+    <Company>J.B. Lippincott</Company>
+  </Book>
+  <Book>
+    <S.No>2</S.No>
+    <Name>Pride and Prejudice</Name>
+    <Price>$8.99</Price>
+    <Artist>Jane Austen</Artist>
+    <Country>	United Kingdom</Country>
+    <Company>	T. Egerton, Whitehall</Company>
+  </Book>
+  <Book>
+    <S.No>3</S.No>
+    <Name>The Great Gatsby</Name>
+    <Price>$12.99</Price>
+    <Artist>F. Scott Fitzgerald</Artist>
+    <Country>USA</Country>
+    <Company>Charles Scribner's Sons</Company>
+  </Book>
+  <Book>
+    <S.No>4</S.No>
+    <Name>1984</Name>
+    <Price>$9.99</Price>
+    <Artist>Bob Dylan</Artist>
+    <Country>USA</Country>
+    <Company>Columbia</Company>
+  </Book>
+  <Book>
+    <S.No>5</S.No>
+    <Name>Animal Farm</Name>
+    <Price>$7.99</Price>
+    <Artist>George Orwell</Artist>
+    <Country>	United Kingdom</Country>
+    <Company>Inside the Whale</Company>
+  </Book>
+  <Book>
+    <S.No>6</S.No>
+    <Name>The Catcher in the Rye</Name>
+    <Price>$11.99</Price>
+    <Artist>J. D. Salinger</Artist>
+    <Country>USA</Country>
+    <Company>Little, Brown and Company</Company>
+  </Book>
+  <Book>
+    <S.No>7</S.No>
+    <Name>One Hundred Years of Solitude</Name>
+    <Price>$14.99</Price>
+    <Artist>Gabriel García Márquez</Artist>
+    <Country>Colombia</Country>
+    <Company>Editorial Sudamericana</Company>
+  </Book>
+  <Book>
+    <S.No>8</S.No>
+    <Name>Moby-Bick</Name>
+    <Price>$9.49</Price>
+    <Artist>Herman Melville</Artist>
+    <Country>USA</Country>
+    <Company>Richard Bentley</Company>
+  </Book>
+  <Book>
+    <S.No>9</S.No>
+    <Name>Wuthering Heights</Name>
+    <Price>$12.49</Price>
+    <Artist>Emily Brontë</Artist>
+    <Country>United Kingdom</Country>
+    <Company>	Thomas Cautley Newby</Company>
+  </Book>
+  <Book>
+    <S.No>10</S.No>
+    <Name>The Odyssey</Name>
+    <Price>$11.99</Price>
+    <Artist>Dan Brown</Artist>
+    <Country>USA</Country>
+    <Company>Little, Brown and Company</Company>
+  </Book>
+</Books>
